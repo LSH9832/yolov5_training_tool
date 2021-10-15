@@ -20,6 +20,7 @@ For more details, please read READ_ME.txt
 ```bash
 git clone https://github.com/LSH9832/yolov5_training_tool.git
 cd yolov5_training_tool
+sudo chmod 777 ./setup.sh
 ./setup.sh
 ```
 ## Download Weight Files
