@@ -19,7 +19,7 @@ before using this tool please make sure the following toolkits or packages insta
 <strong>You should note that if you use this program in a conda enviroment, please install pyqt5 by using "conda install pyqt==5.X.X" rather than "pip3 install pyqt5", or it may failed to run this program.</strong>
 
 ## Install
-For more details, please read READ_ME.txt
+For more details, please read <a href="https://github.com/LSH9832/yolov5_training_tool/blob/main/READ_ME.txt">READ_ME.txt</a>
 ```bash
 git clone https://github.com/LSH9832/yolov5_training_tool.git
 cd yolov5_training_tool
