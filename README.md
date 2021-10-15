@@ -18,8 +18,8 @@ before using this tool please make sure the following toolkits or packages insta
 ## Install
 For more details, please read READ_ME.txt
 ```bash
-git clone https://github.com/LSH9832/tolov5_training_tool.git
-cd tolov5_training_tool
+git clone https://github.com/LSH9832/yolov5_training_tool.git
+cd yolov5_training_tool
 ./setup.sh
 ```
 ## Download Weight Files
