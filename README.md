@@ -4,7 +4,7 @@
 - Only support labels of Pascal-VOC format(.xml file).
 
 ## Introduction
-Since <a href='https://github.com/ultralytics/yolov5'>yolov5</a> is now widely used, a simple and easy-to-use training tool is needed.
+Since <a href='https://github.com/ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
 before using this tool please make sure the following toolkits or packages installed correctly.
 
 - CUDA>=10.1
