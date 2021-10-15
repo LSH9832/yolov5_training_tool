@@ -1,0 +1,59 @@
+from 模板 import 模板类 as MAIN
+
+from sys             import argv, exit
+
+from PyQt5.QtCore    import QTimer
+from PyQt5.QtWidgets import QApplication, QMainWindow
+from PyQt5.QtGui     import QIcon
+
+# from PyQt5           import *
+# import multiprocessing as mp
+
+# 主窗口
+#######################################################################################################################
+class MainWindow(QMainWindow, MAIN):
+
+    # 初始化函数
+    ###################################################################################################################
+    def __init__(self, parent=None):
+
+        super(MainWindow, self).__init__(parent)
+        super(MainWindow, self).setupUi(self)
+        # loadUi('main.ui', self)
+
+        # 固定窗口大小
+        self.setFixedSize(self.size())
+
+        # 加载图标
+        self.loadIcon()
+
+        self.timer = QTimer()  # 定时器，或者计时器， whatever
+        # self.timer.start(2000)  # 开始每2000毫秒自动运行下一行连接的函数，一般用于更新界面，根据需求一般设置为10-20毫秒左右
+        self.timer.timeout.connect(self.timeoutFun)   # 每2000毫秒自动运行一次的函数
+
+此处是一堆连接
+    # 自动运行的函数
+    def timeoutFun(self):
+        print('自动运行的函数的输出')
+
+    # 加载图标
+    def loadIcon(self):
+        if os.path.exists('icons/icon.ico'):
+            self.setWindowIcon(QIcon('icons/icon.ico'))
+        else:
+            for imgtype in ['png', 'jpg', 'bmp', 'gif', 'jpeg']:
+                if os.path.exists('icons/icon.%s' % imgtype):
+                    from MyFunction import img2ico
+                    img2ico('icons/icon.%s' % imgtype)
+                    self.setWindowIcon(QIcon('icons/icon.ico'))
+
+def main():
+    app = QApplication(argv)
+    w = MainWindow()
+    w.show()
+    exit(app.exec())
+
+
+if __name__ == '__main__':
+    # mp.freeze_support()
+    main()
