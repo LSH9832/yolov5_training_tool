@@ -14,6 +14,7 @@ before using this tool please make sure the following toolkits or packages insta
 - torchvision
 - pyqt5
 - pyqt5-tools
+You should note that if you use this program in a conda enviroment, please install pyqt5 by using "conda install pyqt==5.X.X" rather than "pip3 install pyqt5", or it may failed to run this program.
 
 ## Install
 For more details, please read READ_ME.txt
