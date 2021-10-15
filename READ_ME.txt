@@ -33,7 +33,7 @@ follow the step and then the icon of this software will be created in your deskt
      $~: wget -O packages/yolov5/models/pt/yolov5l.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5l.pt
      $~: wget -O packages/yolov5/models/pt/yolov5x.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5x.pt
      
-if you get a extremly slow speed downloading these files, you can try to replace "github.com" with "github.com.cnpmjs.org"
+if you get a extremly slow speed downloading these files, you can try to replace "github.com" with "hub.fastgit.org"
 
 ################################################################################
 
