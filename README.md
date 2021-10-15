@@ -23,6 +23,7 @@ cd yolov5_training_tool
 sudo chmod 777 ./setup.sh
 ./setup.sh
 ```
+You can try to replace "github.com" with "hub.fastgit.org" if download speed is slow.
 ## Download Weight Files
 ```bash
 wget -O packages/yolov5/models/pt/yolov5s.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5s.pt
