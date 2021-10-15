@@ -35,7 +35,7 @@ wget -O packages/yolov5/models/pt/yolov5x.pt https://github.com/ultralytics/yolo
 After running "./setup.sh", this program icon will appear amount the desktop applications, click and open it.<br>
 DesktopFile location:
 ```bash
-/home/$USER/.local/share/applications/YOLOv5TrainGuideTool.desktop
+/home/$USER/.local/share/applications/yolov5_training_tool.desktop
 ```
 - After opening this program, firstly choose a location(example:/home/$USER/datasets) to restore dataset, then give a name(example:mydata) of it and press button "Create Dir", then a new dir(example:mydata) is created in choosed location.(example:/home/$USER/datasets)
 - There are 4 dirs inside your data dir(example:mydata), put all label file(.xml file) into dir "Annotations" and all image files(it seemsly only recognize jpg files, you can modify relative code if you are going to use images with other formats) into dir "images".
