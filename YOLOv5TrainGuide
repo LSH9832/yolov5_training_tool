@@ -308,9 +308,10 @@ def main(d:mng().dict):
 
             show_string = "Done.<br>" \
                           "Now you can open " + location + self.data_name.text() + "/hyp.yaml and tune hyperparameters.<br>" \
-                                                                                   "Then open Terminal and input the following commands to start training.<br><br>" \
-                                                                                   "cd " + location + self.data_name.text() + "<br>" \
-                                                                                                                              "python3 start_train.py"
+                          "Then open Terminal and input the following commands to start training.<br><br>" \
+                          "cd " + location + self.data_name.text() + "<br>" \
+                          "python3 start_train.py    # for single GPU<br>" \
+                          "python3 -m torch.distributed.launch --nproc_per_node %s start_train.py    # for multi-GPU" % str(self.gpuNum.value())
             self.writeToMsg(show_string)
 
         # 下拉列表
