@@ -19,7 +19,7 @@ before using this tool please make sure the following toolkits or packages insta
 For more details, please read READ_ME.txt
 ```bash
 git clone https://github.com/LSH9832/YOLOv5TrainGuideTool.git
-cd YOLOv5TrainGuideTool
+cd YOLOv5_TrainGuideTool
 ./setup.sh
 ```
 ## Download Weight Files
