@@ -1,4 +1,4 @@
-# YOLOv5TrainGuideTool
+# YOLOv5 Traing Tool
 ## Before reading
 - This program is currently not suitable for windows system and it is only tested on ubuntu16.04, 18.04 and 20.04.
 - Only support labels of Pascal-VOC format(.xml file).
@@ -18,8 +18,8 @@ before using this tool please make sure the following toolkits or packages insta
 ## Install
 For more details, please read READ_ME.txt
 ```bash
-git clone https://github.com/LSH9832/YOLOv5TrainGuideTool.git
-cd YOLOv5_TrainGuideTool
+git clone https://github.com/LSH9832/tolov5_training_tool.git
+cd tolov5_training_tool
 ./setup.sh
 ```
 ## Download Weight Files
