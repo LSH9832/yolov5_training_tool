@@ -30,7 +30,7 @@ wget -O packages/yolov5/models/pt/yolov5m.pt https://github.com/ultralytics/yolo
 wget -O packages/yolov5/models/pt/yolov5l.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5l.pt
 wget -O packages/yolov5/models/pt/yolov5x.pt https://github.com/ultralytics/yolov5/releases/download/v5.0/yolov5x.pt
 ```
-
+You can try to replace "github.com" with "hub.fastgit.org" if download speed is slow.
 ## Usage
 After running "./setup.sh", this program icon will appear amount the desktop applications, click and open it.<br>
 DesktopFile location:
