@@ -41,13 +41,13 @@ DesktopFile location:
 ```bash
 /home/$USER/.local/share/applications/yolov5_training_tool.desktop
 ```
-- After opening this program, firstly choose a location(example:/home/$USER/datasets) to restore dataset, then give a name(example:mydata) of it and press button "Create Dir", then a new dir(example:mydata) is created in choosed location.(example:/home/$USER/datasets)
+- After opening this program, firstly choose a location(example:/home/$USER/datasets) to restore dataset, then give a name(example:mydata) of it and click button "Create Dir", then a new dir(example:mydata) is created in choosed location.(example:/home/$USER/datasets)
 - There are 4 dirs inside your data dir(example:mydata), put all label file(.xml file) into dir "Annotations" and all image files(it seemsly only recognize jpg files, you can modify relative code if you are going to use images with other formats) into dir "images".
 - Create file "label.txt" in this dir(example:mydata/label.txt) and write every class name you want to train in this dataset for each line, make sure no empty line in this txt file.
-- Select train persentage of these images and press the button "Generate Training Data", images will be devide into traindata and valdata automatically and anchors is calculate which may take a long time if number of images is too large.
-- Choose model size, input batch size, epochs and how many GPU you want to use; you can also choose other weight file by pressing button "Choose Model", but you should make sure the model size of the weight file is as large as you choose in this program, or it will raise error if you start training. Press button "Generate Code" and "start_train.py" is generate in your data dir. Start training
+- Select train persentage of these images and click the button "Generate Training Data", images will be devide into traindata and valdata automatically and anchors is calculate which may take a long time if number of images is too large.
+- Choose model size, input batch size, epochs and how many GPU you want to use; you can also choose other weight file by clicking button "Choose Model", but you should make sure the model size of the weight file is as large as you choose in this program, or it will raise error if you start training. Click button "Generate Code" and "start_train.py" is generate in your data dir. Start training
 ```bash
 python3 start_train.py    # use single GPU
 python3 -m torch.distributed.launch --master_port 12345 --nproc_per_node ${GPUNUMBER} start_train.py    # use multi GPU of number ${GPUNUMBER}，of course you can change another master_port not being used.
 ```
-- You can also press button "Start Train" and train your data in this program directly. If you are going to run this program in a conda enviroment, choose your enviroment dir before you start training in this program.
+- You can also click button "Start Train" and train your data in this program directly. If you are going to run this program in a conda enviroment, choose your enviroment dir before you start training in this program.
