@@ -97,6 +97,10 @@ def main(d:mng().dict):
             self._process.write(command.encode())
 
         def writeToMsg(self, msg):
+            if not ('<' in msg and '>' in msg):
+                msg = msg.replace(' ','&nbsp;')
+                msg = msg.replace('<','&lt;')
+            msg = msg.replace('\n','<br>').replace('\t','<br>').replace('\r','<br>')
             msg += '<br>'
             if 'mAP@.5' in msg:
                 if 'mAP@.5' in self.msgShow[-1]:
@@ -105,21 +109,21 @@ def main(d:mng().dict):
                     self.msgShow.append(msg)
             elif ('/%s' % str(self.epochs.value() - 1)) in msg:
                 if ('/%s' % str(self.epochs.value() - 1)) in self.msgShow[-1]:
-                    if not '[00:00<?, ?it/s]' in msg:
+                    if not '[00:00<?,&nbsp;?it/s]' in msg:
                         self.msgShow[-1] = msg.split(']')[-2] + ']'
                 else:
                     self.msgShow.append(msg)
             else:
                 write = True
-                notshow = ['Reducer buckets have been rebuilt in this iteration.']
+                notshow = []
                 for forbid in notshow:
                     if forbid in msg:
                         write = False
                         break
-                if 'Epoch' in msg and '[00:00<?, ?it/s]' in msg:
-                    msg = 'Epoch   gpu_mem    box          obj           cls         labels   img_size  [00:00<?, ?it/s]'
+                if 'Epoch' in msg and '[00:00&lt;?,&nbsp;?it/s]' in msg:
+                    msg = '    Epoch   gpu_mem    box          obj           cls         labels   img_size  [00:00&lt;?, ?it/s]<br>'.replace(' ','&nbsp;')
                     self.msgShow.append(msg) if write else None
-                elif '[00:00<?, ?it/s]' in msg and '0%' in msg and not 'mAP@.5' in self.msgShow[-1]:
+                elif '[00:00&lt;?,&nbsp;?it/s]' in msg and '0%' in msg and not 'mAP@.5' in self.msgShow[-1]:
                     pass
                 else:
                     if 'This yolov5 training complete.' in msg:
@@ -173,7 +177,7 @@ def main(d:mng().dict):
                 all_command += '%s start_train.py\necho This yolov5 training complete.\n' % interpreter
                 # self.writeToCMD('python3 start_train.py')
             open('traincommand', 'w').write(all_command)
-            os.system('sudo chmod 777 traincommand')
+            os.system('chmod +x traincommand')
             self._process.start("bash")
             self.writeToCMD('./traincommand')
             self.isTraining = True
@@ -435,6 +439,7 @@ def main(d:mng().dict):
             pickle.dump(savedata, open('res/lastdata', 'wb'))
             os.system('kill %s' % self.d['pid'])
             print(self.d['pid'])
+            self.terminateTrain_ClickFun()
             e.accept()
 
     # print(4)
