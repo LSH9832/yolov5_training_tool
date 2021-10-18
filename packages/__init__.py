@@ -1,4 +1,4 @@
-print('\033[1;31m该模块位置：\033[0m\033[1;32m' + str(__file__).replace('\\','/').replace('/__init__.py','') + '\033[0m  \033[1;31m  Loading... \033[0m')
+# print('\033[1;31m该模块位置：\033[0m\033[1;32m' + str(__file__).replace('\\','/').replace('/__init__.py','') + '\033[0m  \033[1;31m  Loading... \033[0m')
 
 # 将其他格式的图片转换为ico格式的图标文件
 def img2ico(img='*.jpg', ico='*.ico', size = (128,128)):
