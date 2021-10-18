@@ -5,7 +5,7 @@
 <p align="center"><img width="800" src="./raw/main/src.png"></p>
 
 ## Introduction
-Since <a href='......./ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
+Since <a href='https://github.com/ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
 before using this tool please make sure the following toolkits or packages installed correctly.
 
 - CUDA>=10.1
