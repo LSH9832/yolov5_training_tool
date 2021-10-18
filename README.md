@@ -2,7 +2,7 @@
 ## Before reading
 - This program is currently not suitable for windows system and it is only tested on ubuntu16.04, 18.04 and 20.04.
 - Only support labels of Pascal-VOC format(.xml file).
-<p align="center"><img width="800" src=".src.png"></p>
+<p align="center"><img width="800" src="https://raw.githubusercontent.com/LSH9832/yolov5_training_tool/main/src.png"></p>
 
 ## Introduction
 Since <a href='https://github.com/ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
