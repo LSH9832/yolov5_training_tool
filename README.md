@@ -5,7 +5,7 @@
 <p align="center"><img width="800" src="./raw/main/src.png"></p>
 
 ## Introduction
-Since <a href='https://github.com/ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
+Since <a href='.../ultralytics/yolov5'>YOLOv5</a> is now widely used, a simple and easy-to-use training tool is needed.
 before using this tool please make sure the following toolkits or packages installed correctly.
 
 - CUDA>=10.1
@@ -19,7 +19,7 @@ before using this tool please make sure the following toolkits or packages insta
 <strong>You should note that if you use this program in a conda enviroment, please install pyqt5 by using "conda install pyqt==5.X.X" rather than "pip3 install pyqt5", or it may failed to run this program.</strong>
 
 ## Install
-For more details, please read <a href="https://github.com/LSH9832/yolov5_training_tool/blob/main/READ_ME.txt">READ_ME.txt</a>
+For more details, please read <a href="./blob/main/READ_ME.txt">READ_ME.txt</a>
 ```bash
 git clone https://github.com/LSH9832/yolov5_training_tool.git
 cd yolov5_training_tool
