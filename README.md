@@ -1,4 +1,5 @@
 # YOLOv5 Training Tool
+<a href='http://www.bitlsh.top:40443/article?id=yolov5train'>Click Here and View CN Introduction</a>
 ## Before reading
 - This program is currently not suitable for windows system and it is only tested on ubuntu16.04, 18.04 and 20.04.
 - Only support labels of Pascal-VOC format(.xml file).
