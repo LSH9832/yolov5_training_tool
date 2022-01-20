@@ -90,7 +90,7 @@ def main(d:mng().dict):
 
             self.textBrowser.setOpenExternalLinks(True)
             self.writeToMsg(
-                '<h3>Welcome Using YOLOv5 Training Guide Tool! <a href="https://www.bitlsh.top:40443">Click Here</a> to visit author\'s personal website.</h3>')
+                '<h3>Welcome Using YOLOv5 Training Guide Tool! <a href="https://www.bitlsh.top">Click Here</a> to visit author\'s personal website.</h3>')
 
         def writeToCMD(self, command):
             command += '\n'
